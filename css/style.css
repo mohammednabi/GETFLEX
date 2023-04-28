@@ -82,9 +82,7 @@ body{
 
 /* start of landing section */
 
-.landing{
-   
-}
+
 
 .background-cinema{
     width: 100%;
@@ -175,12 +173,7 @@ position: relative;
     font-size: 15rem;
 }
 
-.tv{
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: content-box; */
-}
+
 
 .smart-devices{
     margin-right: 0 !important;
@@ -326,9 +319,7 @@ position: relative;
         
 }
 
- .swiper-pagination{
-    
- }
+
 
 .swiper-button-next:after,.swiper-button-prev:after{
     color: var(--green-color) !important ;
