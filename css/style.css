@@ -1,0 +1,449 @@
+:root{
+
+    --green-color:#55e480;
+    --dark-green-color:#3fac60;
+    --dark-purple-color:#0e0218;
+    --very-dark-purple-color:#0a010d;
+    --purple-color:#110117;
+    --focus-purple-color:#1f022a;
+    --active-purple-color:#2b0339;
+    --light-purple-color:#230224;
+    --very-very-dark-purple-color:#0c010d;
+}
+
+
+
+body{
+     font-family: 'Oswald', sans-serif;
+}
+
+#page{
+    display: none;
+}
+
+.navy{
+    background-color: var(--dark-purple-color) !important;
+  
+     z-index: 6;
+     
+}
+
+.gitflex-logo{
+    width: 9rem;
+    height: auto;
+}
+
+.navy svg{
+    color: white !important;
+    font-size: 2rem;
+    /* border: 5px solid white; */
+    
+}
+
+.navy svg:focus,.navy svg:active,.navy svg:hover{
+    color: var(--green-color) !important;
+}
+
+.navy .navbar-toggler{
+    color: white !important;
+    border-color: white;
+}
+
+.navy .dropdown-menu {
+  background-color:var(--purple-color);
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.navy .dropdown-menu .dropdown-item:focus{
+    background-color: var(--focus-purple-color);
+  
+}
+
+.navy .dropdown-menu .dropdown-item:active{
+    background-color: var(--active-purple-color);
+}
+
+.navy .dropdown-menu .dropdown-item:hover{
+    background-color: var(--green-color);
+}
+
+.nav-link:hover{
+    color: var(--green-color) !important ;
+}
+
+.nav-link.active{
+    color: var(--green-color) !important ;
+    
+}
+
+/* start of landing section */
+
+.landing{
+   
+}
+
+.background-cinema{
+    width: 100%;
+    max-height: calc(100vh - 74px);
+    background-color: var(--focus-purple-color);
+    background-size: contain;
+     object-fit: cover;
+     overflow: hidden;
+position: relative;
+     background-image: url(/imgs/landing\ background.png);
+     
+   
+}
+
+.background-cinema img{
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+
+}
+
+.background-cinema::after{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ background-color: var(--very-dark-purple-color);
+ /* z-index: 5; */
+ opacity: 80%;
+}
+
+.main-btn{
+    color: white;
+    background-color: var(--active-purple-color);
+}
+
+.content-box h1{
+    font-size: 5rem !important;
+}
+
+.content-box a{
+    font-size: 2rem !important;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.content-box a:hover{
+    background-color: var(--green-color);
+    color: var(--active-purple-color);
+    
+}
+
+.content-box a:active{
+    background-color: var(--green-color) !important;
+    color: var(--active-purple-color) !important;
+
+}
+
+/* end of landing section */
+
+/* start of watch section */
+
+.watch{
+    /* background-color: var(--purple-color); */
+    background-color: var(--very-very-dark-purple-color);
+    color: white;
+}
+
+.watch h1 {
+   
+    font-size: 3rem;
+}
+
+.watch h1 span{
+    color: var(--green-color);
+    font-size: 3.2rem;
+}
+
+
+
+.watch hr{
+    color: var(--green-color);
+    font-size: 15rem;
+}
+
+.tv{
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: content-box; */
+}
+
+.smart-devices{
+    margin-right: 0 !important;
+}
+
+/* .tv img{
+    width: 40em;
+    height: auto;
+    position: relative;
+} */
+
+/* .tv::before{
+    position: absolute;
+    content: "hhhhhhhhhhhhhhhhhhhhhhh";
+    color: #55e480;
+    width: 100%;
+    height: 100%;
+     background-color: white;
+    /* top: 4%;
+    left: 10.5%; */
+    /* z-index: 8; */
+    /* top: 0; */
+    /* left: 0; */
+    /* opacity: 50%; */
+/* } */ 
+
+.tv-back{
+ 
+     /* width: 28.5em !important;
+    height: 16.5em !important; 
+    opacity: 20% !important; */
+    top: 0;
+    left: 0;
+    background-image: url("https://i.ebayimg.com/images/g/GtEAAOSw1W9eN1cY/s-l1600.jpg");
+    background-size: cover;
+}
+
+
+/* end of watch section */
+
+
+/* start of recommended */
+
+.recommended{
+    background-color: var(--focus-purple-color);
+}
+
+.cardy{
+    background-color: white;
+    width: 15rem;
+    height: 20rem;
+   
+    /* background-image: url("https://media.harrypotterfanzone.com/philosophers-stone-20-years-of-movie-magic-poster.jpg"); */
+    background-size: cover;
+    box-sizing: border-box;
+    transition: .5s;
+    filter:grayscale(100%) ;
+    -webkit-filter:grayscale(100%) ;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+    border: 2px solid var(--green-color);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.cardy img{
+    width: 15rem;
+    height: 20rem;
+   padding: 0 !important;
+    
+    
+}
+
+.cardy:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+
+.recommended svg{
+    font-size: 6rem;
+    color: var(--green-color);
+
+}
+
+#back-arrow{
+    transform: rotatey(180deg);
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
+    -ms-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+}
+
+.cards-container{
+        display: flex;
+        justify-content: center;
+         flex-wrap: wrap;
+   overflow: hidden;
+}
+
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: var(--focus-purple-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: grab;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .swiper-pagination-bullet{
+        border-radius: 5px !important;
+        -webkit-border-radius: 5px !important;
+        -moz-border-radius: 5px !important;
+        -ms-border-radius: 5px !important;
+        -o-border-radius: 5px !important;
+        width: 40px !important;
+        height: 10px !important;
+        background-color: var(--green-color) !important;
+       
+        
+}
+
+ .swiper-pagination{
+    
+ }
+
+.swiper-button-next:after,.swiper-button-prev:after{
+    color: var(--green-color) !important ;
+}
+
+.swiper-scrollbar{
+background-color: var(--light-purple-color) !important;
+}
+.swiper-scrollbar-drag{
+background-color: var(--green-color) !important;
+}
+
+
+
+/* end of recommended */
+
+
+/* start of questions */
+
+.questions{
+    background-color: var(--dark-purple-color);
+}
+
+.accordion-item{
+    background-color: var(--dark-green-color) !important;
+}
+
+.accordion-button{
+    background-color: var(--green-color) !important;
+}
+/* end of questions */
+
+/* start of copyright  */
+
+.copyright{
+    background-color: var(--very-very-dark-purple-color);
+    
+}
+
+
+.copyright .container svg {
+    font-size: 2rem;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    color: white;
+    opacity: 50%;
+}
+
+.copyright .container svg:hover {
+    color: var(--green-color);
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.copyright p span{
+    color: var(--green-color);
+}
+
+.copyright p span svg{
+    font-size: 2rem;
+}
+
+/* end of copyright  */
+
+
+/* media queries */
+
+
+/* extra small screens and above */
+@media only screen and (max-width: 540px) {
+
+
+
+}
+
+/* medium screens and low */
+@media only screen and (max-width: 720px) {
+
+        .content-box h1{
+    font-size: 3rem !important;
+}
+
+.content-box a{
+    font-size: 1.5rem !important;
+
+}
+
+}
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--active-purple-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #47034a;
+  transition:all .5s;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  -ms-transition:all .5s;
+  -o-transition:all .5s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-color);
+}

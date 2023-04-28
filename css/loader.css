@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#loading{
+    background-color: #0e0218;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#logo-container{
+    position: relative;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#g-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+   
+}
+
+ #g-logo{
+    width: 47%;
+    height: auto;
+    opacity: 0;
+    animation: diplayed 3s infinite  ease-in-out ;
+    -webkit-animation: diplayed 3s infinite  ease-in-out ;
+}
+
+
+ 
+ #logo-container::after{
+    position: absolute;
+    content: "";
+    background-color: #0e0218;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: go-right  5s infinite ease-in-out;
+    -webkit-animation: go-right  5s infinite ease-in-out;
+   
+} 
+
+
+    @keyframes diplayed {
+        0%{
+        
+            opacity: 0;
+        }
+
+    25%{
+        
+    opacity: 0;
+    }
+
+    50%{
+    
+    opacity:100%;
+    }
+
+    75%{
+    
+    opacity:100%;
+    }
+
+        100%{
+        
+            opacity:0;
+        }
+    } 
+
+@keyframes go-right {
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+
+
+
+
+25%{
+     transform: translateX(0);
+     -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+}
+
+50%{
+     transform: translateX(100%);
+     -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+     -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+}
+
+
+75%{
+     transform: translateX(100%);
+     -webkit-transform: translateX(100%);
+     -moz-transform: translateX(100%);
+     -ms-transform: translateX(100%);
+     -o-transform: translateX(100%);
+}
+
+
+100%{
+     transform: translateX(0);
+     -webkit-transform: translateX(0);
+     -moz-transform: translateX(0);
+     -ms-transform: translateX(0);
+     -o-transform: translateX(0);
+}
+
+
+} 
+
+
+/* extra small screens and above */
+@media only screen and (min-width:0 ) and (max-width: 768px ) {
+
+
+#logo-container{
+    display: none;
+}
+
+#g-container{
+    display: flex;
+}
+
+}
+
+/* medium screens and above */
+@media only screen and (min-width: 768px) {
+
+#logo{
+    display: flex;
+}
+
+#g-logo{
+    display: none;
+}
+
+}
+ 
+
