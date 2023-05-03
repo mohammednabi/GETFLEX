@@ -1,5 +1,7 @@
 let loader = document.getElementById("loading");
 let page = document.getElementById("page");
+localStorage.setItem("class", "clicky");
+// console.log(localStorage.getItem("class"));
 
 window.addEventListener("load", function () {
  
@@ -112,3 +114,8 @@ function randomUniqueNum(range, outputCount) {
 
   return result;
 }
+
+
+
+
+

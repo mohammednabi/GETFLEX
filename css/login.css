@@ -1,0 +1,45 @@
+:root{
+
+    --green-color:#55e480;
+    --dark-green-color:#3fac60;
+    --dark-purple-color:#0e0218;
+    --very-dark-purple-color:#0a010d;
+    --purple-color:#110117;
+    --focus-purple-color:#1f022a;
+    --active-purple-color:#2b0339;
+    --light-purple-color:#230224;
+    --very-very-dark-purple-color:#0c010d;
+    --image-dark-blue:#000010;
+}
+
+.login{
+    background-color: var(--focus-purple-color);
+    max-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+main{
+    background-color: var(--image-dark-blue);
+    min-height: calc(100vh - 74.675px);
+}
+
+main img{
+    filter: contrast(1.2);
+    -webkit-filter: contrast(1.2);
+}
+
+.sign-buttons{
+
+background-color: var(--purple-color) ;
+
+border: 5px solid var(--light-purple-color);
+
+}
+
+#sign-up{
+    display: none;
+}
+
+#sign-in{
+    /* display: none; */
+}

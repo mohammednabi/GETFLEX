@@ -92,7 +92,7 @@ body{
      object-fit: cover;
      overflow: hidden;
 position: relative;
-     background-image: url(/imgs/landing\ background.png);
+     background-image: url(imgs/landing-background.png);
      
    
 }
@@ -343,12 +343,18 @@ background-color: var(--green-color) !important;
     background-color: var(--dark-purple-color);
 }
 
+.popular{
+    color: var(--green-color);
+}
+
+
+
 .accordion-item{
-    background-color: var(--dark-green-color) !important;
+    background-color: #cfcfcf !important;
 }
 
 .accordion-button{
-    background-color: var(--green-color) !important;
+    background-color: #e7e7e7 !important;
 }
 /* end of questions */
 
